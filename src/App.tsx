@@ -3,6 +3,7 @@ import './App.css'
 import ProductSelector from './components/CompanySelector';
 import { mockProducts } from './data/sampleData';
 import LatestComments from './components/LatestComments';
+import InventoryStatus from './components/Inventory';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   return (
     <div className='main-container'>
       <ProductSelector selectedCompany={selectedCompany} setSelectedCompany={setSelectedCompany} />
+      <InventoryStatus currentInventory={currentCompanyData!.currentInventory} />
       <LatestComments comments={currentCompanyData!.latestComments} />
     </div>
   )
