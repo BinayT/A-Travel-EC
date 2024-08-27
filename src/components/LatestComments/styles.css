@@ -1,0 +1,4 @@
+.latestComments{
+    display: flex;
+    flex-direction: column;
+}

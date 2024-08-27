@@ -2,11 +2,11 @@ import React from 'react';
 import {mockProducts} from '../../data/sampleData'
 
 interface ProductSelectorProps {
-  selectedProduct: string;
-  setSelectedProduct: (product: string) => void;
+    selectedCompany: string;
+    setSelectedCompany: (product: string) => void;
 }
 
-const ProductSelector: React.FC<ProductSelectorProps> = ({ selectedProduct, setSelectedProduct }) => {
+const ProductSelector: React.FC<ProductSelectorProps> = ({ selectedCompany, setSelectedCompany }) => {
     const companiesNames = mockProducts.map(el=> el.name);
     
     return (
@@ -16,8 +16,8 @@ const ProductSelector: React.FC<ProductSelectorProps> = ({ selectedProduct, setS
       </label>
       <select
         id="product-selector"
-        value={selectedProduct}
-        onChange={(e) => setSelectedProduct(e.target.value)}
+        value={selectedCompany}
+        onChange={(e) => setSelectedCompany(e.target.value)}
       >
         {companiesNames.map(el=>(
             <option value={el}>{el}</option>
