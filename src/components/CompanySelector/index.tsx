@@ -1,5 +1,6 @@
 import React from 'react';
 import {sampleData} from '../../data/sampleData'
+import './styles.css';
 
 interface ProductSelectorProps {
     selectedCompany: string;
@@ -10,7 +11,7 @@ const ProductSelector: React.FC<ProductSelectorProps> = ({ selectedCompany, setS
     const companiesNames = sampleData.map(el=> el.name);
     
     return (
-    <div>
+    <div className='company-selector'>
       <label htmlFor="product-selector">
         Select Company
       </label>

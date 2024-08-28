@@ -1,6 +1,7 @@
 // LineChart.tsx
 import React, { useEffect, useRef } from 'react';
 import { Chart, registerables } from 'chart.js';
+import './styles.css';
 
 Chart.register(...registerables);
 
@@ -17,7 +18,7 @@ interface LineChartProps {
   period: 'last12Months' | 'last6Months' | 'last3Months' | 'lastMonth';
 }
 
-const LineChart: React.FC<LineChartProps> = ({ data, label, width, height, period }) => {
+const LineChart: React.FC<LineChartProps> = ({ data, label, period }) => {
   const chartRef = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {
@@ -60,7 +61,7 @@ const LineChart: React.FC<LineChartProps> = ({ data, label, width, height, perio
   }, [data, period, label]);
 
   return (
-    <div style={{ width, height }}>
+    <div className='line-chart-container'>
       <canvas ref={chartRef}></canvas>
     </div>
   );

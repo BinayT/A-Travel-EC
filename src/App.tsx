@@ -13,11 +13,13 @@ function App() {
   console.log(currentCompanyData);
   
   return (
-    <div className='main-container'>
+    <div className='root-container'>
+      <div className='main-container'>
       <ProductSelector selectedCompany={selectedCompany} setSelectedCompany={setSelectedCompany} />
       <InventoryStatus currentInventory={currentCompanyData!.currentInventory} />
       <ProductChart product={currentCompanyData} />
       <LatestComments comments={currentCompanyData!.latestComments} />
+      </div>
     </div>
   )
 }

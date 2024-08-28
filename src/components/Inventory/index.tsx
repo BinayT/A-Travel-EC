@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles.css';
 
 interface InventoryProps {
   currentInventory: number;
@@ -6,7 +7,7 @@ interface InventoryProps {
 
 const InventoryStatus: React.FC<InventoryProps> = ({ currentInventory }) => {
   return (
-    <div>
+    <div className='current-inventory'>
       <span>Current Inventory - </span>
       <span>{currentInventory}</span>
     </div>
