@@ -1,5 +1,5 @@
 import React from 'react';
-import {mockProducts} from '../../data/sampleData'
+import {sampleData} from '../../data/sampleData'
 
 interface ProductSelectorProps {
     selectedCompany: string;
@@ -7,7 +7,7 @@ interface ProductSelectorProps {
 }
 
 const ProductSelector: React.FC<ProductSelectorProps> = ({ selectedCompany, setSelectedCompany }) => {
-    const companiesNames = mockProducts.map(el=> el.name);
+    const companiesNames = sampleData.map(el=> el.name);
     
     return (
     <div>
