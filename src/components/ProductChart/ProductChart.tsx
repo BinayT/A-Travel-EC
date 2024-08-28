@@ -40,7 +40,7 @@ const ProductChart: React.FC<ProductChartProps> = ({ product }) => {
   return (
     <div className='charts-container'>
       <div>
-        <h2>{product.name} - Conversion Rate Data</h2>
+        <h2 className='data-type'>Conversion Rate Data</h2>
         <LineChart 
           data={product.conversionRateData} 
           label="Conversion Rate (%)" 
@@ -51,7 +51,7 @@ const ProductChart: React.FC<ProductChartProps> = ({ product }) => {
       </div>
 
       <div>
-        <h2>{product.name} - Review Trend Data</h2>
+        <h2 className='data-type'>Review Trend Data</h2>
         <LineChart 
           data={product.reviewTrendData} 
           label="Review Trend (1-5 Stars)" 
@@ -62,7 +62,7 @@ const ProductChart: React.FC<ProductChartProps> = ({ product }) => {
       </div>
 
       <div>
-        <h2>{product.name} - Sales Data</h2>
+        <h2 className='data-type'>Sales Data</h2>
         <LineChart 
           data={product.salesData} 
           label="Sales" 

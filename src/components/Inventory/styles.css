@@ -2,4 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    line-height: 32px;
+    font-size:26px;
+    margin: 20px 0;
 }

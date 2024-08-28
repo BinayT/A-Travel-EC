@@ -1,4 +1,30 @@
 .latestComments{
     display: flex;
     flex-direction: column;
+    margin: 50px 0px;
+}
+
+.latestComments_title{
+    margin-bottom:0;
+}
+
+.latestComments__item{
+    line-height: 30px;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.latestComments__userImage{
+    border-radius: 50%;
+    height:70px;
+    width:70px;
+}
+
+.latestComments__name{
+    color:aqua;
+}
+
+.latestComments__timestamp{
+    color:rgb(43, 93, 138);
 }

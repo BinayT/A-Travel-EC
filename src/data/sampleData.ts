@@ -22,11 +22,36 @@ export const sampleData = [
       lastMonth: [4.6],
     },
     latestComments: [
-      'Excellent flight experience and customer service!',
-      'Smooth booking process and reliable flights.',
-      'Great value for money on international flights.',
-      'Comfortable seats and on-time departures.',
-      'Highly recommend for hassle-free travel.'
+      {
+        "name": "John Doe",
+        "image": "https://randomuser.me/api/portraits/men/1.jpg",
+        "comment": "Excellent flight experience and customer service!",
+        "timestamp": "21st Aug 2023 - 14:45"
+      },
+      {
+        "name": "Jane Smith",
+        "image": "https://randomuser.me/api/portraits/women/2.jpg",
+        "comment": "Smooth booking process and reliable flights.",
+        "timestamp": "19th Aug 2023 - 11:30"
+      },
+      {
+        "name": "Mike Johnson",
+        "image": "https://randomuser.me/api/portraits/men/3.jpg",
+        "comment": "Great value for money on international flights.",
+        "timestamp": "15th Aug 2023 - 09:22"
+      },
+      {
+        "name": "Emily Davis",
+        "image": "https://randomuser.me/api/portraits/women/4.jpg",
+        "comment": "Comfortable seats and on-time departures.",
+        "timestamp": "13th Aug 2023 - 17:00"
+      },
+      {
+        "name": "David Brown",
+        "image": "https://randomuser.me/api/portraits/men/5.jpg",
+        "comment": "Highly recommend for hassle-free travel.",
+        "timestamp": "10th Aug 2023 - 16:45"
+      }
     ],
   },
   {
@@ -52,11 +77,36 @@ export const sampleData = [
       lastMonth: [4.5],
     },
     latestComments: [
-      'Found the best last-minute deals on flights!',
-      'Efficient booking and excellent customer support.',
-      'Easy to use and great options for spontaneous trips.',
-      'Flights were as described and on schedule.',
-      'Great discounts on last-minute bookings.'
+      {
+        "name": "Sarah Wilson",
+        "image": "https://randomuser.me/api/portraits/women/6.jpg",
+        "comment": "Found the best last-minute deals on flights!",
+        "timestamp": "21st Aug 2023 - 08:30"
+      },
+      {
+        "name": "Chris Miller",
+        "image": "https://randomuser.me/api/portraits/men/7.jpg",
+        "comment": "Efficient booking and excellent customer support.",
+        "timestamp": "18th Aug 2023 - 14:15"
+      },
+      {
+        "name": "Laura Garcia",
+        "image": "https://randomuser.me/api/portraits/women/8.jpg",
+        "comment": "Easy to use and great options for spontaneous trips.",
+        "timestamp": "16th Aug 2023 - 20:45"
+      },
+      {
+        "name": "Tom Martinez",
+        "image": "https://randomuser.me/api/portraits/men/9.jpg",
+        "comment": "Flights were as described and on schedule.",
+        "timestamp": "12th Aug 2023 - 07:00"
+      },
+      {
+        "name": "Lisa Hernandez",
+        "image": "https://randomuser.me/api/portraits/women/10.jpg",
+        "comment": "Great discounts on last-minute bookings.",
+        "timestamp": "8th Aug 2023 - 18:30"
+      }
     ],
   },
   {
@@ -82,11 +132,36 @@ export const sampleData = [
       lastMonth: [4.4],
     },
     latestComments: [
-      'Great airline with competitive fares and good service.',
-      'Comfortable flights and friendly staff.',
-      'Punctual flights and smooth boarding process.',
-      'Good options for both domestic and international travel.',
-      'Reliable and budget-friendly airline.'
+      {
+        "name": "Steven Lee",
+        "image": "https://randomuser.me/api/portraits/men/11.jpg",
+        "comment": "Great airline with competitive fares and good service.",
+        "timestamp": "20th Aug 2023 - 12:10"
+      },
+      {
+        "name": "Natalie Walker",
+        "image": "https://randomuser.me/api/portraits/women/12.jpg",
+        "comment": "Comfortable flights and friendly staff.",
+        "timestamp": "17th Aug 2023 - 13:55"
+      },
+      {
+        "name": "Patrick White",
+        "image": "https://randomuser.me/api/portraits/men/13.jpg",
+        "comment": "Punctual flights and smooth boarding process.",
+        "timestamp": "14th Aug 2023 - 09:35"
+      },
+      {
+        "name": "Samantha Green",
+        "image": "https://randomuser.me/api/portraits/women/14.jpg",
+        "comment": "Good options for both domestic and international travel.",
+        "timestamp": "11th Aug 2023 - 16:20"
+      },
+      {
+        "name": "Ryan Hall",
+        "image": "https://randomuser.me/api/portraits/men/15.jpg",
+        "comment": "Reliable and budget-friendly airline.",
+        "timestamp": "7th Aug 2023 - 14:50"
+      }
     ],
   },
   {
@@ -112,11 +187,36 @@ export const sampleData = [
       lastMonth: [4.4],
     },
     latestComments: [
-      'Excellent flight experience with superb service.',
-      'Seamless booking process and excellent customer support.',
-      'Flights are always on time with comfortable amenities.',
-      'Great for both leisure and business travel.',
-      'Consistently good service and competitive pricing.'
-    ],
+      {
+        "name": "Angela Scott",
+        "image": "https://randomuser.me/api/portraits/women/16.jpg",
+        "comment": "Excellent flight experience with superb service.",
+        "timestamp": "22nd Aug 2023 - 19:40"
+      },
+      {
+        "name": "Kevin Young",
+        "image": "https://randomuser.me/api/portraits/men/17.jpg",
+        "comment": "Seamless booking process and excellent customer support.",
+        "timestamp": "18th Aug 2023 - 12:00"
+      },
+      {
+        "name": "Olivia King",
+        "image": "https://randomuser.me/api/portraits/women/18.jpg",
+        "comment": "Flights are always on time with comfortable amenities.",
+        "timestamp": "15th Aug 2023 - 08:25"
+      },
+      {
+        "name": "Jason Wright",
+        "image": "https://randomuser.me/api/portraits/men/19.jpg",
+        "comment": "Great for both leisure and business travel.",
+        "timestamp": "12th Aug 2023 - 11:45"
+      },
+      {
+        "name": "Rachel Adams",
+        "image": "https://randomuser.me/api/portraits/women/20.jpg",
+        "comment": "Consistently good service and competitive pricing.",
+        "timestamp": "9th Aug 2023 - 10:15"
+      }
+    ]
   },
 ]
