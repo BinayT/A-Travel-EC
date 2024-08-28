@@ -28,3 +28,14 @@
 .latestComments__timestamp{
     color:rgb(43, 93, 138);
 }
+
+@media (max-width: 760px)  {
+    .latestComments{
+        margin-left:30px;
+    }
+
+    .latestComments__item{
+        flex-direction: column;
+        gap:20px;
+    }
+}
