@@ -1,7 +1,8 @@
-// ProductChart.tsx
 import React, { useState } from 'react';
 import LineChart from '../LineChart/LineChart';
 import './styles.css';
+import { PeriodOption } from './periodOptions';
+import ProductPeriodSelector from './ProductPeriodSelector/ProductPeriodSelector';
 
 interface Product {
   id: string;
@@ -32,7 +33,6 @@ interface ProductChartProps {
   product: Product;
 }
 
-type PeriodOption = 'last12Months' | 'last6Months' | 'last3Months' | 'lastMonth';
 
 const ProductChart: React.FC<ProductChartProps> = ({ product }) => {
   const [period, setPeriod] = useState<PeriodOption>('last12Months');
@@ -72,12 +72,7 @@ const ProductChart: React.FC<ProductChartProps> = ({ product }) => {
         />
       </div>
 
-      {/* <div>
-        <button onClick={() => setPeriod('last12Months')}>Last 12 Months</button>
-        <button onClick={() => setPeriod('last6Months')}>Last 6 Months</button>
-        <button onClick={() => setPeriod('last3Months')}>Last 3 Months</button>
-        <button onClick={() => setPeriod('lastMonth')}>Last Month</button>
-      </div> */}
+      <ProductPeriodSelector period={period} setPeriod={setPeriod} />
     </div>
   );
 };

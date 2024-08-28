@@ -1,0 +1,1 @@
+export type PeriodOption = 'last12Months' | 'last6Months' | 'last3Months' | 'lastMonth';
