@@ -1,7 +1,7 @@
 .latestComments{
     display: flex;
     flex-direction: column;
-    margin: 50px 0px;
+    margin: 50px 20px;
 }
 
 .latestComments_title{

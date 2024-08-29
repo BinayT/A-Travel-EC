@@ -2,39 +2,10 @@ import React, { useState } from 'react';
 import LineChart from '../LineChart/LineChart';
 import './styles.css';
 import { PeriodOption } from './periodOptions';
+import { ProductProps } from '../datatypes/Product'
 import ProductPeriodSelector from './ProductPeriodSelector/ProductPeriodSelector';
 
-interface Product {
-  id: string;
-  name: string;
-  currentInventory: number;
-  salesData: {
-    last12Months: number[];
-    last6Months: number[];
-    last3Months: number[];
-    lastMonth: number[];
-  };
-  conversionRateData: {
-    last12Months: number[];
-    last6Months: number[];
-    last3Months: number[];
-    lastMonth: number[];
-  };
-  reviewTrendData: {
-    last12Months: number[];
-    last6Months: number[];
-    last3Months: number[];
-    lastMonth: number[];
-  };
-  latestComments: string[];
-}
-
-interface ProductChartProps {
-  product: Product;
-}
-
-
-const ProductChart: React.FC<ProductChartProps> = ({ product }) => {
+const ProductChart: React.FC<ProductProps> = ({ product }) => {
   const [period, setPeriod] = useState<PeriodOption>('last12Months');
 
   return (
