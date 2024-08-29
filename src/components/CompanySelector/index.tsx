@@ -12,12 +12,13 @@ const ProductSelector: React.FC<ProductSelectorProps> = ({ selectedCompany, setS
     const companiesNames = sampleData.map(el=> el.name);
     
     return (
-    <div className='companySelector'>
-      <label htmlFor="product-selector">
+    <div className='companySelector d-flex-jc-ac'>
+      <label htmlFor="product-selector" className='companySelector__text'>
         Select Company
       </label>
       <select
         id="product-selector"
+        className='companySelector__selector'
         value={selectedCompany}
         onChange={(e) => setSelectedCompany(e.target.value)}
       >

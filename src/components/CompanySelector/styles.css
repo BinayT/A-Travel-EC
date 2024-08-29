@@ -1,6 +1,16 @@
 .companySelector{
-    display:flex;
-    justify-content: center;
-    align-items: center;
     line-height:30px;
+}
+
+.companySelector__text{
+    font-size:16px;
+    margin-right:10px;
+}
+
+.companySelector__selector{
+    height:30px;
+}
+
+.chartPeriodContainer__selector{
+    height: 30px;
 }
