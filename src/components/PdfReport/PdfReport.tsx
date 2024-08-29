@@ -2,6 +2,8 @@ import React from 'react';
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 import { ProductProps } from '../datatypes/Product';
+import './styles.css';
+
 
 const ReportButton: React.FC<ProductProps> = ({product}) => {
   const generateReport = () => {
@@ -49,14 +51,17 @@ const ReportButton: React.FC<ProductProps> = ({product}) => {
       ]
     });
 
-    const pdfName = 'Report' + product?.name.split(' ').join('_') + '.pdf'
+    const pdfName = 'Report_' + product?.name.split(' ').join('_') + '.pdf'
     doc.save(pdfName);
   };
 
   return (
-    <button onClick={generateReport}>
-      Generate Report
-    </button>
+        <div className='generate-pdf-btn'>
+          <button onClick={generateReport}>
+              Generate Report
+          </button>
+        </div>
+
   );
 };
 
