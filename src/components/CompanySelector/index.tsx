@@ -11,7 +11,7 @@ const ProductSelector: React.FC<ProductSelectorProps> = ({ selectedCompany, setS
     const companiesNames = sampleData.map(el=> el.name);
     
     return (
-    <div className='company-selector'>
+    <div className='companySelector'>
       <label htmlFor="product-selector">
         Select Company
       </label>

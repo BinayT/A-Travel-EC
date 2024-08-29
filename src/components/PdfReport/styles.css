@@ -1,6 +1,9 @@
-.generate-pdf-btn{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:30px;
+.generatePdfBtn{
+    margin-bottom: 30px;
+}
+
+@media (max-width: 760px)  {
+    .generatePdfBtn{
+        margin-top: 30px;
+    }
 }

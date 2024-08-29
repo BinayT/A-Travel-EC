@@ -56,7 +56,7 @@ const ReportButton: React.FC<ProductProps> = ({product}) => {
   };
 
   return (
-        <div className='generate-pdf-btn'>
+        <div className='generatePdfBtn d-flex-jc-ac'>
           <button onClick={generateReport}>
               Generate Report
           </button>

@@ -16,9 +16,9 @@ function App() {
     <div className='root-container'>
       <div className='main-container'>
       <ProductSelector selectedCompany={selectedCompany} setSelectedCompany={setSelectedCompany} />
+      <InventoryStatus currentInventory={currentCompanyData!.currentInventory} />
       {currentCompanyData  && <>
         <ReportButton product={currentCompanyData} />
-        <InventoryStatus currentInventory={currentCompanyData!.currentInventory} />
         <ProductChart product={currentCompanyData} />
         <LatestComments comments={currentCompanyData!.latestComments} />
       </>}

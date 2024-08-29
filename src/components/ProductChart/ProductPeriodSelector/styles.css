@@ -1,3 +1,7 @@
 .chartPeriodContainer{
     line-height: 30px;
 }
+
+.chartPeriodContainer__selectPeriod{
+    margin-right: 10px;
+}

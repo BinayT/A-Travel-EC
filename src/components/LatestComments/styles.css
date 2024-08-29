@@ -34,6 +34,17 @@
 
     .latestComments__item{
         flex-direction: column;
-        gap:20px;
+        gap:15px;
+        margin-bottom:40px;
+    }
+
+    .latestComments__details{
+        display: flex;
+        flex-direction: column;
+        gap:5x;
+    }
+
+    .latestComments__nameTimestamp{
+        font-size:14px;
     }
 }

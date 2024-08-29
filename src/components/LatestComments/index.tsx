@@ -27,7 +27,7 @@ const LatestComments: React.FC<LatestCommentsProps> = ({ comments }) => {
                     <i className='latestComments__timestamp'>{el.timestamp}</i>
                 </div>
                 <div className='latestComments__comment'>
-                  <span>{el.comment}</span>
+                  <i>{el.comment}</i>
                 </div>
               </div>
             </div>
