@@ -1,7 +1,7 @@
 import React from 'react';
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
-import { ProductProps } from '../datatypes/Product';
+import { ProductProps } from '../../types/datatypes/Product';
 import './styles.css';
 
 

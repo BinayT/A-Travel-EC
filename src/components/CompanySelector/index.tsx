@@ -8,6 +8,7 @@ interface ProductSelectorProps {
 }
 
 const ProductSelector: React.FC<ProductSelectorProps> = ({ selectedCompany, setSelectedCompany }) => {
+    // Here I am getting the names of all the companies that we have in our DB.
     const companiesNames = sampleData.map(el=> el.name);
     
     return (

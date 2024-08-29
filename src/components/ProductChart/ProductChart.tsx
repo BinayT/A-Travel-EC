@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import LineChart from '../LineChart/LineChart';
 import './styles.css';
-import { PeriodOption } from './periodOptions';
-import { ProductProps } from '../datatypes/Product'
+import { PeriodOption } from '../../types/datatypes/periodOptions';
+import { ProductProps } from '../../types/datatypes/Product'
 import ProductPeriodSelector from './ProductPeriodSelector/ProductPeriodSelector';
 
 const ProductChart: React.FC<ProductProps> = ({ product }) => {
+  // Default period is last12Months.
   const [period, setPeriod] = useState<PeriodOption>('last12Months');
 
   return (

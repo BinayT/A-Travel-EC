@@ -132,7 +132,7 @@ export const sampleData = [
       lastMonth: [4.4],
     },
     latestComments: [
-      {
+      /* {
         "name": "Steven Lee",
         "image": "https://randomuser.me/api/portraits/men/11.jpg",
         "comment": "Great airline with competitive fares and good service.",
@@ -161,7 +161,7 @@ export const sampleData = [
         "image": "https://randomuser.me/api/portraits/men/15.jpg",
         "comment": "Reliable and budget-friendly airline.",
         "timestamp": "7th Aug 2023 - 14:50"
-      }
+      } */
     ],
   },
   {
