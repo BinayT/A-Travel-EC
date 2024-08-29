@@ -14,7 +14,7 @@ interface LatestCommentsProps {
 const LatestComments: React.FC<LatestCommentsProps> = ({ comments }) => {
     
   return (
-    <div className='latestComments'>
+    <div className='latestComments d-flex-fdc'>
         <h2 className='latestComments_title'>Latest Comments</h2>
         <h3>Total Comments: {comments.length}</h3>
         {comments.map(el=>(

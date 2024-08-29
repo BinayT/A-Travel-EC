@@ -51,7 +51,6 @@ const LineChart: React.FC<LineChartProps> = ({ data, label, period }) => {
         },
       });
 
-      // Cleanup function to destroy chart instance
       return () => {
         if (chart) {
           chart.destroy();

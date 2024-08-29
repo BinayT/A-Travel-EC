@@ -28,6 +28,17 @@ h1 {
   line-height: 1.1;
 }
 
+.d-flex-jc-ac{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-flex-fdc{
+  display:flex;
+  flex-direction: column;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;

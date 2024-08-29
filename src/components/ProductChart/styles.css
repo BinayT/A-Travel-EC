@@ -1,13 +1,12 @@
-.charts-container{
+.chartsContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.chartsContainer__charts{
     display:flex;
     justify-content: space-around;
     align-items: center;
     gap:40px;
     flex-wrap: wrap;
-}
-
-.data-type{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }

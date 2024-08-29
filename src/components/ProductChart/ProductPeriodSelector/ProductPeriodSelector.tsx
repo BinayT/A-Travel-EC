@@ -1,4 +1,5 @@
 import { PeriodOption } from "../periodOptions";
+import './styles.css'
 
 interface ProductPeriodSelectorProps {
     period: PeriodOption;
@@ -8,7 +9,7 @@ interface ProductPeriodSelectorProps {
 
 const ProductPeriodSelector: React.FC<ProductPeriodSelectorProps> = ({period, setPeriod}) => {
   return (
-    <div>
+    <div className="chartPeriodContainer d-flex-jc-ac">
       <select value={period} onChange={(e) => setPeriod(e.target.value as 'last12Months' | 'last6Months' | 'last3Months' | 'lastMonth')}>
         <option value="last12Months">Last 12 Months</option>
         <option value="last6Months">Last 6 Months</option>
