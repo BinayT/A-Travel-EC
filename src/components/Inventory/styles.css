@@ -1,4 +1,4 @@
-.current-inventory{
+.currentInventory{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@
 }
 
 @media (max-width: 760px)  {
-    .current-inventory{
+    .currentInventory{
         margin-bottom: 0;
     }
 }

@@ -60,7 +60,7 @@ const LineChart: React.FC<LineChartProps> = ({ data, label, period }) => {
   }, [data, period, label]);
 
   return (
-    <div className='line-chart-container'>
+    <div className='lineChartContainer'>
       <canvas ref={chartRef}></canvas>
     </div>
   );

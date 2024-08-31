@@ -11,10 +11,10 @@ interface LatestCommentsProps {
   comments?: comments[];
 }
 
-const LatestComments: React.FC<LatestCommentsProps> = ({ comments }) => {
+const LatestComments: React.FC<LatestCommentsProps> = ({ comments = [] }) => {
   return (
     <div className='latestComments d-flex-fdc'>
-        <h2 className='latestComments_title'>Latest Comments</h2>
+        <h2 className='latestComments__title'>Latest Comments</h2>
         <h3>Total Comments: {comments?.length}</h3>
         {/* It might be a possibility that there are no comments or we do not recieve comment, thus a check. */}
         {!comments ||  comments.length === 0  ? <i>No comments available.</i> : 

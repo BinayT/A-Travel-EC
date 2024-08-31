@@ -1,11 +1,11 @@
-.line-chart-container{
+.lineChartContainer{
     height:200px;
     width:400px;
 }
 
 
 @media (max-width: 760px)  {
-    .line-chart-container{
+    .lineChartContainer{
         height:200px;
         width:310px;
     }

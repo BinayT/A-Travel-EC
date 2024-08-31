@@ -7,7 +7,7 @@ interface InventoryProps {
 
 const InventoryStatus: React.FC<InventoryProps> = ({ currentInventory }) => {
   return (
-    <div className='current-inventory'>
+    <div className='currentInventory'>
       <span>Current Inventory - </span>
       <span>{currentInventory}</span>
     </div>
