@@ -22,8 +22,8 @@ const ProductSelector: React.FC<ProductSelectorProps> = ({ selectedCompany, setS
         value={selectedCompany}
         onChange={(e) => setSelectedCompany(e.target.value)}
       >
-        {companiesNames.map(el=>(
-            <option value={el}>{el}</option>
+        {companiesNames.map((el, i)=>(
+            <option value={el} key={i}>{el}</option>
         ))}
       </select>
     </div>

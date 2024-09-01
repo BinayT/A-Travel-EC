@@ -10,7 +10,7 @@ const ReportButton: React.FC<ProductProps> = ({product}) => {
     const doc = new jsPDF();
 
     doc.setFontSize(16);
-    doc.text('Report: World Travel Inc', 10, 10);
+    doc.text(`Report: ${product?.name}`, 10, 10);
 
     doc.setFontSize(12);
     doc.text(`Current Inventory: ${product.currentInventory}`, 10, 20);

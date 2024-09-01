@@ -36,10 +36,12 @@ describe('LatestComments Component', () => {
   test('renders each comment correctly', () => {
     render(<LatestComments comments={[comments[0]]} />);
 
+    // Here checking the actual comment with relative info. 
     expect(screen.getByText('John Doe')).toBeInTheDocument();
     expect(screen.getByText('Great post!')).toBeInTheDocument();
     expect(screen.getByText('19th Aug 2023 - 18:52')).toBeInTheDocument();
     
+    // Here checking the img tag with the corresponding url and classname. 
     const imgElement = screen.getByRole('img');
     expect(imgElement).toHaveAttribute('src', 'path/to/image1.jpg');
     expect(imgElement).toHaveClass('latestComments__userImage');
