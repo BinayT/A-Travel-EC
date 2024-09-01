@@ -24,7 +24,8 @@ const config: Config = {
   moduleNameMapper: {
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
   },
-  testPathIgnorePatterns: ['/node_modules/', '/dist/']
+  testPathIgnorePatterns: ['/node_modules/', '/dist/'],
+  setupFiles: ['jest-canvas-mock']
 }
 
 export default config
